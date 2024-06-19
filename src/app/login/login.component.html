@@ -1,0 +1,19 @@
+<!-- this page will have a login form with email and password fields and with login button and signup link-->
+
+<h1 style="text-align: center;margin-top: 20px;">Login</h1>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <form class="loginForm"  (ngSubmit)="onLogin()">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary" id="login">Login</button>
+        <div class="form-group">
+            <a href="/signup" class="signup-link">Don't have an account? Sign up here</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+.loginForm{
+    width: 35%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 1px solid #82cce1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(190, 16, 16, 0.1);
+}
+
+#login{
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-link{
+   color: #595dd9;
+   text-align: center;
+
+}

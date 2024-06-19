@@ -1,0 +1,42 @@
+<!-- this will have signup form with fields name age email mobileno password -->
+<h1 style="text-align: center;margin-top: 20px;">Signup</h1>
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <form class="signupForm" style="width: 50%;" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" formControlName="name" >
+            <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched" class="text-danger">
+            Name is required.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" class="form-control" id="dob" formControlName="dob" >
+            <div *ngIf="signupForm.get('dob')?.invalid && signupForm.get('dob')?.touched" class="text-danger">
+            Date of Birth is required.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" formControlName="email" >
+            <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="text-danger">
+            Email is required.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mobileno">Mobile No:</label>
+            <input type="number" class="form-control" id="mobileno" formControlName="mobileno" >
+            <div *ngIf="signupForm.get('mobileno')?.invalid && signupForm.get('mobileno')?.touched" class="text-danger">
+            Mobile No is required.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" formControlName="password" >
+            <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched" class="text-danger">
+            Password is required.
+            </div>
+        </div>
+        <button type="submit"  class="btn btn-primary" id="signup">Register</button>
+        </form>
+</div>
